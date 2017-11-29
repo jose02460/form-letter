@@ -5,9 +5,28 @@
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title></title>
+    <title>Form Control</title>
   </head>
   <body>
+    <div class="container">
+      <h1>FORM CONTROL!</h1>
+      <form id="userNameEntry">
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input id="firstName" class="form-control" type="text">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last name</label>
+          <input id="lastName" class="form-control" type="text">
+        </div>
+        <button type="submit" name="createLetter">Create letter!</button>
+      </form>
 
+      <div id="letter">
+        <p>
+          Dear <span class="firstName"></span> <span class="lastName"></span><br>It is a pleasure being able to write to you today! Thanks for conversing, have a good day!
+        </p>
+      </div>
+    </div>
   </body>
 </html>
